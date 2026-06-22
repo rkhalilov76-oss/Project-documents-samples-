@@ -1,7 +1,7 @@
 # Библиотека шаблонов проектной документации
 ## Внедрение 1С:ERP + 1С:Управление холдингом
 
-![status](https://img.shields.io/badge/шаблонов_готово-47%2F55-success) ![method](https://img.shields.io/badge/метод-PMBOK_8th_ed.-blue) ![gost](https://img.shields.io/badge/ГОСТ-34.602%2F34.603-blue) ![lang](https://img.shields.io/badge/язык-RU-lightgrey)
+![status](https://img.shields.io/badge/шаблонов_готово-55%2F55-success) ![method](https://img.shields.io/badge/метод-PMBOK_8th_ed.-blue) ![gost](https://img.shields.io/badge/ГОСТ-34.602%2F34.603-blue) ![lang](https://img.shields.io/badge/язык-RU-lightgrey)
 
 Готовый к работе комплект шаблонов проектной документации для **крупного внедрения корпоративной ИС** на базе 1С:ERP Управление предприятием и 1С:Управление холдингом. Шаблоны разработаны на основе **PMBOK Guide (8-е издание)** в гибридном подходе, с использованием **ГОСТ 34.602 / 34.603** в качестве каркаса для документов формальной приёмки.
 
@@ -152,24 +152,24 @@
 | План поддержки (Hypercare) | .docx | ✅ | [`Plan_podderzhki_Hypercare_shablon.docx`](06-vnedrenie-i-ope/Plan_podderzhki_Hypercare_shablon.docx) |
 
 ### 7. Эксплуатационная документация
-<sub>папка `07-ekspluatacionnaya-dokumentaciya/` — готово 0 из 4</sub>
+<sub>папка `07-ekspluatacionnaya-dokumentaciya/` — готово 4 из 4</sub>
 
 | Документ | Формат | Статус | Файл |
 |---|:---:|:---:|---|
-| Руководство пользователя | .docx | ⬜ | — |
-| Руководство администратора | .docx | ⬜ | — |
-| Регламенты эксплуатации и сопровождения (SLA) | .docx | ⬜ | — |
-| Инструкции по типовым операциям | .docx | ⬜ | — |
+| Руководство пользователя | .docx | ✅ | [`Rukovodstvo_polzovatelya_shablon.docx`](07-ekspluatacionnaya-dokumentaciya/Rukovodstvo_polzovatelya_shablon.docx) |
+| Руководство администратора | .docx | ✅ | [`Rukovodstvo_administratora_shablon.docx`](07-ekspluatacionnaya-dokumentaciya/Rukovodstvo_administratora_shablon.docx) |
+| Регламенты эксплуатации и сопровождения (SLA) | .docx | ✅ | [`Reglamenty_ekspluatacii_SLA_shablon.docx`](07-ekspluatacionnaya-dokumentaciya/Reglamenty_ekspluatacii_SLA_shablon.docx) |
+| Инструкции по типовым операциям | .docx | ✅ | [`Instrukcii_po_tipovym_operaciyam_shablon.docx`](07-ekspluatacionnaya-dokumentaciya/Instrukcii_po_tipovym_operaciyam_shablon.docx) |
 
 ### 8. Закрытие
-<sub>папка `08-zakrytie/` — готово 0 из 4</sub>
+<sub>папка `08-zakrytie/` — готово 4 из 4</sub>
 
 | Документ | Формат | Статус | Файл |
 |---|:---:|:---:|---|
-| Акты сдачи-приёмки | .docx | ⬜ | — |
-| Протокол завершения проекта | .docx | ⬜ | — |
-| Отчёт об извлечённых уроках | .docx | ⬜ | — |
-| Реестр переданных активов | .xlsx | ⬜ | — |
+| Акты сдачи-приёмки | .docx | ✅ | [`Akt_sdachi-priyomki_shablon.docx`](08-zakrytie/Akt_sdachi-priyomki_shablon.docx) |
+| Протокол завершения проекта | .docx | ✅ | [`Protokol_zaversheniya_proekta_shablon.docx`](08-zakrytie/Protokol_zaversheniya_proekta_shablon.docx) |
+| Отчёт об извлечённых уроках | .docx | ✅ | [`Otchet_ob_izvlechyonnyh_urokah_shablon.docx`](08-zakrytie/Otchet_ob_izvlechyonnyh_urokah_shablon.docx) |
+| Реестр переданных активов | .xlsx | ✅ | [`Reestr_peredannyh_aktivov.xlsx`](08-zakrytie/Reestr_peredannyh_aktivov.xlsx) |
 
 ---
 
