@@ -1,0 +1,35 @@
+name: Build diagnostic passport
+
+on:
+  push:
+    branches:
+      - agent/add-diagnostic-passport
+    paths:
+      - '.passport-parts/**'
+      - '.github/workflows/build-diagnostic-passport.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/add-diagnostic-passport
+      - name: Reconstruct workbook
+        shell: bash
+        run: |
+          mkdir -p 00-predproektnaya-diagnostika
+          cat .passport-parts/part*.txt | base64 --decode > 00-predproektnaya-diagnostika/Diagnosticheskiy_pasport_biznes-iniciativy_shablon.xlsx
+          test "$(stat -c%s 00-predproektnaya-diagnostika/Diagnosticheskiy_pasport_biznes-iniciativy_shablon.xlsx)" -eq 17863
+          echo "4685bba36ef9b35f3940f7edb85b55ec385d2a35565a29670742369a6caf05cb  00-predproektnaya-diagnostika/Diagnosticheskiy_pasport_biznes-iniciativy_shablon.xlsx" | sha256sum -c -
+      - name: Commit workbook
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 00-predproektnaya-diagnostika/Diagnosticheskiy_pasport_biznes-iniciativy_shablon.xlsx
+          git commit -m "Добавить диагностический паспорт бизнес-инициативы"
+          git push
